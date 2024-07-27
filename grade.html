@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checker</title>
+    <link rel="stylesheet" href="grade-temperature.css">
+</head>
+
+<body>
+    <a href="grade-temperature.html">
+        <p class="btn">Back</p>
+    </a>
+    <script>
+
+        let grade = (prompt("Input your grade"))
+        /***If else statements***/
+        /*if(grade=100){
+          alert("you got an 'A' grade");
+        } */
+        if (grade > 100) {
+            alert("Invalid Input");
+        }
+        else if (grade <= 80 && grade > 70) {
+            alert("Congratulations!You got a 'B' grade");
+        }
+        else if (grade <= 70 && grade > 50) {
+            alert("Congratulations!You got a 'C' grade");
+        }
+        else if (grade <= 50 && grade > 40) {
+            alert("Congratulations!You got a 'D' grade");
+        }
+        else if (/*grade>=0&&*/ grade <= 40) {
+            alert("Oh no!You got an 'F' grade");
+        }
+        else {
+            alert("Congratulations!You got an 'A'");
+        };  
+    </script>
+</body>
+
+</html>
